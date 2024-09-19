@@ -11,6 +11,7 @@ public class Zahlenraten {
         int eingabe = scanner.nextInt();
         int maxVersuche = 10;
         int verbkeibendeVersuche = maxVersuche;
+        int tries = 0; 
 
         verbkeibendeVersuche--;
 
@@ -21,14 +22,15 @@ public class Zahlenraten {
                 System.out.println("Zu niedrig!");
             }
 
+            tries++;
             verbkeibendeVersuche--;
             System.out.println("Du hast noch " + verbkeibendeVersuche + " Versuche");
-            System.out.println("Versuche es nochmal: ");
+            System.out.println("Versuche es nochmal ");
             eingabe = scanner.nextInt();
 
         } 
         if (eingabe == zahl) {
-            System.out.println("Richtig!!! Du hast die Zahl erraten. ");
+            System.out.println("Richtig!!! Du hast die Zahl erraten und hast soviele Versuche gebraucht: " + tries);
         }else {
             System.out.println("Leider, keine Versuche mehr! Die richtige Zahl war: " + zahl);
 
