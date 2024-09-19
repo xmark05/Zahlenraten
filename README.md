@@ -1,0 +1,1 @@
+Ziel des Spieles ist es eine random Zahl 1-100 zu erstellen und den User raten zu lassen. Dieser hat nur begrenzte Anzahl an rate möglichkeiten, bekommt aber nach jedem raten einen Tipp ob diese Zahl kleiner oder großer ist.
