@@ -1,8 +1,14 @@
 import java.util.Scanner;
 import java.util.Random;
+import javax.swing.*;
 
-public class Zahlenraten {
+public class Zahlenraten extends JFrame {
+
     public static void main(String[] args) {
+
+        NumberGuessApp guessApp = new NumberGuessApp();
+        guessApp.start();
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Rate eine Zahl zwischen 1 und 100: ");
         Random random = new Random();
