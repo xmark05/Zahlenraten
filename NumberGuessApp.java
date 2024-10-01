@@ -21,6 +21,8 @@ public class NumberGuessApp extends JFrame {
         //Fenster größe nicht änderbar
         setResizable(false);
 
+        random = new Random();
+
          // CardLayout erstellen
          cardLayout = new CardLayout();
          mainPanel = new JPanel(cardLayout);
@@ -58,7 +60,8 @@ public class NumberGuessApp extends JFrame {
          startButton.addActionListener(new ActionListener() {
              @Override
              public void actionPerformed(ActionEvent e) {
-                 cardLayout.show(mainPanel, "GameScreen");
+                randomNumber = random.nextInt(100) + 1;
+                cardLayout.show(mainPanel, "GameScreen");
              }
          });
  
@@ -73,15 +76,18 @@ public class NumberGuessApp extends JFrame {
          JPanel panel = new JPanel();
          panel.setLayout(null);
 
+//Text in der Mitte
          JLabel label = new JLabel("Errate die Zahl!", JLabel.CENTER);
          label.setBounds(80, 250, 250, 80);
          label.setFont(new Font("Arial", Font.BOLD, 20));
 
+//TextFeld
          JTextField inputField = new JTextField();
          inputField.setBounds(50, 450, 300, 40);
-
+         
+//Rate Button         
          JButton guessButton = new JButton("Rate!");
-         guessButton.setBounds(50, 490, 150, 40);
+         guessButton.setBounds(125, 490, 150, 40);
          guessButton.setFont(new Font("Arial", Font.BOLD, 16));
 
          JButton winButton = new JButton("Gewonnen!");
