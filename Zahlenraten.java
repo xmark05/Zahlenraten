@@ -1,5 +1,3 @@
-import java.util.Scanner;
-import java.util.Random;
 import javax.swing.*;
 public class Zahlenraten extends JFrame {
 
@@ -7,6 +5,5 @@ public class Zahlenraten extends JFrame {
 
         NumberGuessApp guessApp = new NumberGuessApp();
         guessApp.start();
-        
     }
 }

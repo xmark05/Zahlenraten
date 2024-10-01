@@ -6,3 +6,8 @@ Zukünftige Funktionen:
 -  Modi: ❌
 - Hardcore: Nur 2 Versuche, begrenzte Anzahl an Tipps. ❌
 - Schwer: 5 Versuche, usw. ❌
+- Dark mode ❌
+
+
+✅ == gemacht
+❌ == noch nicht gemacht 

@@ -84,7 +84,7 @@ public class NumberGuessApp extends JFrame {
 //TextFeld
          JTextField inputField = new JTextField();
          inputField.setBounds(50, 450, 300, 40);
-         
+
 //Rate Button         
          JButton guessButton = new JButton("Rate!");
          guessButton.setBounds(125, 490, 150, 40);
@@ -141,6 +141,8 @@ public class NumberGuessApp extends JFrame {
          JPanel panel = new JPanel();
          JLabel label = new JLabel("Du hast gewonnen!", JLabel.CENTER);
          JButton restartButton = new JButton("Neues Spiel");
+         restartButton.setBounds(50, 500, 150, 40);
+         restartButton.setFont(new Font("Arial", Font.BOLD, 16));
  
          restartButton.addActionListener(new ActionListener() {
              @Override
