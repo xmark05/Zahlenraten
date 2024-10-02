@@ -9,5 +9,6 @@ Zukünftige Funktionen:
 - Dark mode ❌
 
 
-✅ == gemacht
+✅ == gemacht,
+
 ❌ == noch nicht gemacht 

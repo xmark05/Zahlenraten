@@ -139,7 +139,7 @@ public class NumberGuessApp extends JFrame {
      // Gewinnen-Bildschirm
      private JPanel createWinScreen() {
          JPanel panel = new JPanel();
-         JLabel label = new JLabel("Du hast gewonnen!", JLabel.CENTER);
+         JLabel label = new JLabel("Du hast gewonnen!");
          JButton restartButton = new JButton("Neues Spiel");
          restartButton.setBounds(50, 500, 150, 40);
          restartButton.setFont(new Font("Arial", Font.BOLD, 16));
